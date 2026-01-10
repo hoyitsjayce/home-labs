@@ -1,20 +1,20 @@
 # Incident Report - Failed SSH Login Attempts
 
-**Date:** 08 January 2026
+**Date: 08 January 2026
 
-Severity: Medium
+**Severity:** Medium
 
-Status: Closed
+**Status:** Closed
 
 
 
-Summary
+## Summary
 
 The Wazuh SIEM flagged several failed SSH attempts against a Linux endpoint in a short time period. The individual authentication failures were logged, showing a higher severity alert, including a possible brute force attempt. The investigation found no successful authentication and no system compromise. The incident was closed with suggestions to strengthen SSH access to lower future risk.
 
 
 
-Detection
+## Detection
 
 Source Tool: Wazuh SIEM
 
@@ -26,7 +26,7 @@ Log Source: /var/log/auth.log
 
 
 
-Timeline
+## Timeline
 
 23:18:33 Initial SSH authentication failure detected (Rule 5760)
 
@@ -42,7 +42,7 @@ Timeline
 
 
 
-Investigation
+## Investigation
 
 Endpoint: Ubuntu Linux
 
@@ -54,7 +54,7 @@ Authentication method: SSH password-based login
 
 
 
-Impact Assessment
+## Impact Assessment
 
 System Impact: none
 
@@ -62,7 +62,7 @@ Data Impact: none
 
 
 
-Remediation
+## Remediation
 
 Immediate Action: No containment actions required
 
@@ -89,4 +89,3 @@ Lessons Learned
 \- Monitoring authentication can reveal early signs of brute force activity
 
 \- Strengthening SSH can lessen vulnerability to password-based attacks
-
