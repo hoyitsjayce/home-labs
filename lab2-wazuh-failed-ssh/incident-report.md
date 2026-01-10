@@ -74,7 +74,7 @@ The Wazuh SIEM flagged several failed SSH attempts against a Linux endpoint in a
 
 
 
-Evidence Collected
+**Evidence Collected**
 
 \- Wazuh Alerts (Rules 5760 and 2502)
 
@@ -84,7 +84,7 @@ Evidence Collected
 
 
 
-Lessons Learned
+**Lessons Learned**
 
 \- Monitoring authentication can reveal early signs of brute force activity
 
