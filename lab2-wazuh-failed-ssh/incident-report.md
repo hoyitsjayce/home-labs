@@ -16,13 +16,13 @@ The Wazuh SIEM flagged several failed SSH attempts against a Linux endpoint in a
 
 ## Detection
 
-Source Tool: Wazuh SIEM
+**Source Tool:** Wazuh SIEM
 
-Primary Rule ID: 5760 sshd: authentication failed
+**Primary Rule ID:** 5760 sshd: authentication failed
 
-Correlation Rule ID: 2502 User missed the password more than once
+**Correlation Rule ID:** 2502 User missed the password more than once
 
-Log Source: /var/log/auth.log
+**Log Source:** /var/log/auth.log
 
 
 
@@ -44,29 +44,29 @@ Log Source: /var/log/auth.log
 
 ## Investigation
 
-Endpoint: Ubuntu Linux
+**Endpoint:** Ubuntu Linux
 
-Username targeted: ubuntu
+**Username targeted:** ubuntu
 
-Source IP: 10.0.0.12
+**Source IP:** 10.0.0.12
 
-Authentication method: SSH password-based login
+**Authentication method:** SSH password-based login
 
 
 
 ## Impact Assessment
 
-System Impact: none
+**System Impact:** none
 
-Data Impact: none
+**Data Impact:** none
 
 
 
 ## Remediation
 
-Immediate Action: No containment actions required
+**Immediate Action:** No containment actions required
 
-Recommended Hardening Measures:
+**Recommended Hardening Measures:**
 
 \- Implement account lockout
 
