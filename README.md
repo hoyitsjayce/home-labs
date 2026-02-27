@@ -1,4 +1,4 @@
-# Cybersecurity Lab Portfolio
+# Home Lab Portfolio
 
 Hands-on cybersecurity labs utilizing VMWare with Kali Linux, Ubuntu, Metasploitable, Wazuh, and Flare VM documenting offensive and defensive cybersecurity techniques
 
