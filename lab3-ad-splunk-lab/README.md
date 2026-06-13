@@ -1,6 +1,6 @@
 # Active Directory Homelab
 
-A hands-on cybersecurity homelab simulating a small enterprise environment with Active Directory, centralized logging via Splunk, and attack simulation using Kali Linux.
+A hands-on cybersecurity homelab simulating a small enterprise environment with Active Directory, centralized logging via Splunk, and attack simulation using Kali Linux. Built following the [MyDFIR Active Directory Homelab](https://www.youtube.com/@MyDFIR) tutorial series.
 
 ---
 
