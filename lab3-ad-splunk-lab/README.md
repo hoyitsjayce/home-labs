@@ -4,13 +4,13 @@ A hands-on cybersecurity homelab simulating a small enterprise environment with 
 
 ---
 
-## 📐 Network Diagram
+## Network Diagram
 
-[![Active Directory Homelab Diagram](Active_Directory_Homelab_Diagram.png)](Active_Directory_Homelab_Diagram.drawio)
+[![Active Directory Homelab Diagram](Active_Directory_Homelab_Diagram.png)](Active_Directory_Homelab_Diagram.png)
 
 ---
 
-## 🖥️ Lab Environment
+## Lab Environment
 
 | Machine | Role | IP Address | OS |
 |---|---|---|---|
