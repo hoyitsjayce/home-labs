@@ -1,46 +1,17 @@
-\# Lab 2 – Failed SSH Login Detection (Wazuh SIEM)
+# Lab: Failed SSH Login Detection (Wazuh SIEM)
 
+**Date:** January 8, 2026
+**Environment:** Ubuntu Linux and Wazuh Managerthrough VMWare
 
+---
 
-\## Objective
+## Objective
+Detect and document failed secure shell authentication attempts using Wazuh SIEM to identify a potential brute force behavior on a Linux endpoint.
 
-Detect and investigate failed SSH authentication attempts using Wazuh SIEM to identify potential brute-force behavior.
+## Essential Findings
+- Monitoring authentication can reveal early signs of brute force activity
+- Strengthening SSH can lessen vulnerability to password-based attacks
 
-
-
-\## Tools Used
-
-\- Wazuh SIEM
-
-\- Ubuntu Linux
-
-\- SSH
-
-
-
-\## Detection Logic
-
-\- Rule 5760: SSH authentication failed
-
-\- Rule 2502: Correlated multiple failed authentication attempts
-
-
-
-\## Investigation Summary
-
-Multiple failed SSH login attempts were detected against a Linux endpoint and escalated via correlation rules. Analysis confirmed no successful authentication or system compromise.
-
-
-
-\## Evidence
-
-Screenshots and alert metadata are provided in the `/screenshots` directory.
-
-
-
-\## Outcome
-
-The incident was documented and closed with recommendations to harden SSH access.
 
 
 

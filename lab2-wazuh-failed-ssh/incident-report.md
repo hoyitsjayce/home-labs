@@ -1,32 +1,32 @@
-Incident Report - Failed SSH Login Attempts
+# Incident Report - Failed SSH Login Attempts
 
-Date: 08 January 2026
+**Date: 08 January 2026
 
-Severity: Medium
+**Severity:** Medium
 
-Status: Closed
+**Status:** Closed
 
 
 
-Summary
+## Summary
 
 The Wazuh SIEM flagged several failed SSH attempts against a Linux endpoint in a short time period. The individual authentication failures were logged, showing a higher severity alert, including a possible brute force attempt. The investigation found no successful authentication and no system compromise. The incident was closed with suggestions to strengthen SSH access to lower future risk.
 
 
 
-Detection
+## Detection
 
-Source Tool: Wazuh SIEM
+**Source Tool:** Wazuh SIEM
 
-Primary Rule ID: 5760 sshd: authentication failed
+**Primary Rule ID:** 5760 sshd: authentication failed
 
-Correlation Rule ID: 2502 User missed the password more than once
+**Correlation Rule ID:** 2502 User missed the password more than once
 
-Log Source: /var/log/auth.log
+**Log Source:** /var/log/auth.log
 
 
 
-Timeline
+## Timeline
 
 23:18:33 Initial SSH authentication failure detected (Rule 5760)
 
@@ -42,31 +42,31 @@ Timeline
 
 
 
-Investigation
+## Investigation
 
-Endpoint: Ubuntu Linux
+**Endpoint:** Ubuntu Linux
 
-Username targeted: ubuntu
+**Username targeted:** ubuntu
 
-Source IP: 10.0.0.12
+**Source IP:** 10.0.0.12
 
-Authentication method: SSH password-based login
-
-
-
-Impact Assessment
-
-System Impact: none
-
-Data Impact: none
+**Authentication method:** SSH password-based login
 
 
 
-Remediation
+## Impact Assessment
 
-Immediate Action: No containment actions required
+**System Impact:** none
 
-Recommended Hardening Measures:
+**Data Impact:** none
+
+
+
+## Remediation
+
+**Immediate Action:** No containment actions required
+
+**Recommended Hardening Measures:**
 
 \- Implement account lockout
 
@@ -74,7 +74,7 @@ Recommended Hardening Measures:
 
 
 
-Evidence Collected
+**Evidence Collected**
 
 \- Wazuh Alerts (Rules 5760 and 2502)
 
@@ -84,9 +84,8 @@ Evidence Collected
 
 
 
-Lessons Learned
+**Lessons Learned**
 
 \- Monitoring authentication can reveal early signs of brute force activity
 
 \- Strengthening SSH can lessen vulnerability to password-based attacks
-
