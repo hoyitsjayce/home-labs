@@ -42,6 +42,8 @@ A hands-on cybersecurity homelab simulating a small enterprise environment with 
 - Created Organizational Units (OUs), users, and groups
 - Joined the demo Windows 10 target machine to the domain
 
+![Active Directory Users and Computers](ad-users-computers.png)
+
 ### 3. Splunk Configuration
 - Deployed Splunk on Ubuntu Server (`192.168.10.10`)
 - Installed **Splunk Universal Forwarder** on ADDC01
