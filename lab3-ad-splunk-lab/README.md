@@ -21,7 +21,7 @@ A hands-on cybersecurity homelab simulating a small enterprise environment with 
 
 ---
 
-## 🛠️ Tools & Technologies
+## Tools & Technologies
 
 - **Active Directory Domain Services (AD DS)** — Domain controller managing users, groups, and policies
 - **Splunk** — SIEM platform for log ingestion, searching, and alerting
@@ -31,7 +31,7 @@ A hands-on cybersecurity homelab simulating a small enterprise environment with 
 
 ---
 
-## 🔧 Setup Overview
+## Setup Overview
 
 ### 1. Network Configuration
 - All machines on a NAT network: `192.168.10.0/24`
@@ -58,7 +58,7 @@ A hands-on cybersecurity homelab simulating a small enterprise environment with 
 
 ---
 
-## 🔍 Splunk Detection
+## Splunk Detection
 
 Logs are queryable via the `endpoint` index in Splunk:
 
@@ -88,4 +88,4 @@ index=endpoint EventCode=4625
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
