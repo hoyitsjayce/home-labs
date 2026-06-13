@@ -6,7 +6,7 @@ A hands-on cybersecurity homelab simulating a small enterprise environment with 
 
 ## Network Diagram
 
-[![Active Directory Homelab Diagram](Active Directory Homelab Diagram.png)](Active Directory Homelab Diagram.png)
+[![Active Directory Homelab Diagram](Active_Directory_Homelab_Diagram.png)](Active_Directory_Homelab_Diagram.png)
 
 ---
 
