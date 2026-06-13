@@ -4,7 +4,7 @@
 
  A hands-on cybersecurity homelab simulating a small enterprise environment with Active Directory, centralized logging via Splunk, and attack simulation using Kali Linux. 
 
-# 
+
 
 # Network Diagram
 
