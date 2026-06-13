@@ -15,9 +15,9 @@ A hands-on cybersecurity homelab simulating a small enterprise environment with 
 | Machine | Role | IP Address | OS |
 |---|---|---|---|
 | Splunk Server | Log aggregation & SIEM | 192.168.10.10 | Ubuntu Server |
-| Active Directory | Domain Controller | 192.168.10.7 | Windows Server 2022 |
-| Target PC | Endpoint (domain-joined) | 192.168.10.x | Windows 10 |
-| Kali Linux | Attacker machine | 192.168.10.250 | Kali Linux |
+| ADDC01 | Domain Controller | 192.168.10.7 | Windows Server 2022 |
+| demo | Endpoint (domain-joined) | 192.168.10.x | Windows 10 |
+| Kali-Linux-2025.4 | Attacker machine | 192.168.10.250 | Kali Linux |
 
 ---
 
@@ -25,7 +25,7 @@ A hands-on cybersecurity homelab simulating a small enterprise environment with 
 
 - **Active Directory Domain Services (AD DS)** — Domain controller managing users, groups, and policies
 - **Splunk** — SIEM platform for log ingestion, searching, and alerting
-- **Splunk Universal Forwarder** — Installed on the AD server to forward Windows Event Logs to Splunk
+- **Splunk Universal Forwarder** — Installed on ADDC01 to forward Windows Event Logs to Splunk
 - **Sysmon** — System Monitor for detailed endpoint telemetry (process creation, network connections, etc.)
 - **Kali Linux** — Used for simulating attacks (brute force, enumeration, etc.)
 
@@ -38,18 +38,18 @@ A hands-on cybersecurity homelab simulating a small enterprise environment with 
 - Kali Linux used as the attack machine from within the same subnet
 
 ### 2. Active Directory Setup
-- Promoted Windows Server to Domain Controller
+- Promoted ADDC01 (Windows Server 2022) to Domain Controller
 - Created Organizational Units (OUs), users, and groups
-- Joined the Windows 10 target machine to the domain
+- Joined the demo Windows 10 target machine to the domain
 
 ### 3. Splunk Configuration
 - Deployed Splunk on Ubuntu Server (`192.168.10.10`)
-- Installed **Splunk Universal Forwarder** on the AD server
+- Installed **Splunk Universal Forwarder** on ADDC01
 - Configured `inputs.conf` to collect Windows Event Logs and Sysmon logs
 - Set up the `endpoint` index to receive forwarded logs
 
 ### 4. Sysmon Installation
-- Installed Sysmon on the AD/Windows machines using the [Olaf Hartong config](https://github.com/olafhartong/sysmon-modular)
+- Installed Sysmon on ADDC01 and demo using the [Olaf Hartong config](https://github.com/olafhartong/sysmon-modular)
 - Provides enriched telemetry for detections
 
 ### 5. Attack Simulation (Kali Linux)
