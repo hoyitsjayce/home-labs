@@ -92,7 +92,6 @@ index=endpoint EventCode=4625
 
 ## Repository Structure
 ├── README.md
-
 ├── Active_Directory_Homelab_Diagram.png
-
+├── ad-users-computers.png
 └── index_endpoint.png
