@@ -1,6 +1,6 @@
 # Home Lab Portfolio
 
-Hands-on cybersecurity labs utilizing VMWare and VirtualBox with Kali Linux, Ubuntu, Metasploitable, Wazuh, and Splunk documenting offensive and defensive cybersecurity techniques.
+Hands-on cybersecurity and information technology labs utilizing VMWare and VirtualBox with Kali Linux, Ubuntu, Metasploitable, Wazuh, and Splunk documenting offensive and defensive cybersecurity techniques.
 
 ---
 
