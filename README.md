@@ -1,6 +1,6 @@
 # Home Lab Portfolio
 
-Hands-on information technology and cybersecurity labs built with VMware and VirtualBox, covering systems administration (Windows Server/Active Directory, Ubuntu) alongside security operations (Wazuh, Splunk SIEM). Labs span network configuration and endpoint management as well as intrusion detection, log analysis, and attack simulation — reflecting both infrastructure and security perspectives.
+Hands-on information technology and cybersecurity labs built with VMware and VirtualBox, covering systems administration (Windows Server/Active Directory, Ubuntu) alongside security operations (Wazuh, Splunk SIEM). Labs span network configuration and endpoint management as well as intrusion detection, log analysis, and attack simulation.
 
 ---
 
